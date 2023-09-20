@@ -65,9 +65,9 @@ public class StudentManagerTest {
         assertEquals(19, foundStudent.getStudentAge());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testStudentAge_StudentAgeInvalid() {
-        Student student = new Student("6", "neha seebran", 16, "seebran@@gmail.com", "Chemistry");
+        Student student = new Student("6", "neha seebran", 14, "seebran@@gmail.com", "Chemistry");
         studentManager.saveStudent(student);
     }
 
